@@ -17,8 +17,9 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('id_pengaduan');
             $table->date('tgl_tanggapan');
+            $table->string('tanggapan');
+            $table->bigInteger('id_petugas');
             $table->timestamps();
-            column
         });
     }
 
