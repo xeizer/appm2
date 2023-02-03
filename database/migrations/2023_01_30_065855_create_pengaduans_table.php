@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('pengaduans', function (Blueprint $table) {
             $table->id();
             $table->date('tgl_pengaduan');
-            $table->string('nik');
+            $table->string('nik')->nullable();
             $table->text('isi_laporan');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->timestamps();
-            $table->string('status');
+            $table->string('status')->nullable();
         });
     }
 
