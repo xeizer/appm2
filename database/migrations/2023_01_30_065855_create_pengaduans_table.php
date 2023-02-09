@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('nik')->nullable();
             $table->text('isi_laporan');
             $table->string('foto')->nullable();
-            $table->timestamps();
             $table->string('status')->nullable();
+            $table->timestamps();
         });
     }
 
